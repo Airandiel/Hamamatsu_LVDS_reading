@@ -1,0 +1,97 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Apr  5 17:27:04 2019
+# Process ID: 11832
+# Current directory: D:/projectsXilinx/LVDS-reading
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2844 D:\projectsXilinx\LVDS-reading\LVDS-reading.xpr
+# Log file: D:/projectsXilinx/LVDS-reading/vivado.log
+# Journal file: D:/projectsXilinx/LVDS-reading\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/projectsXilinx/LVDS-reading/LVDS-reading.xpr
+file mkdir D:/projectsXilinx/LVDS-reading/LVDS-reading.srcs/sim_2/new
+set_property SOURCE_SET sources_1 [get_filesets sim_2]
+close [ open D:/projectsXilinx/LVDS-reading/LVDS-reading.srcs/sim_2/new/main_sim.vhd w ]
+add_files -fileset sim_2 D:/projectsXilinx/LVDS-reading/LVDS-reading.srcs/sim_2/new/main_sim.vhd
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top main_sim [get_filesets sim_2]
+set_property top_lib xil_defaultlib [get_filesets sim_2]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+set_property simulator_language VHDL [current_project]
+launch_simulation -simset [get_filesets sim_2 ]
+open_project D:/projectsXilinx/multiplexer/multiplexer.xpr
+open_project D:/projectsXilinx/testy_xc7/testy_xc7.xpr
+update_compile_order -fileset sources_1
+current_project LVDS-reading
+current_project testy_xc7
+current_project LVDS-reading
+launch_simulation -simset [get_filesets sim_2 ]
+launch_simulation -simset [get_filesets sim_2 ]
+launch_simulation -simset [get_filesets sim_2 ]
+launch_simulation -simset [get_filesets sim_2 ]
+launch_simulation -simset [get_filesets sim_2 ]
+source main_sim.tcl
+current_project testy_xc7
+close_project
+current_project LVDS-reading
+run all
+close_sim
+clear
+launch_simulation -simset [get_filesets sim_2 ]
+source main_sim.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+launch_simulation -simset [get_filesets sim_2 ]
+source main_sim.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source main_sim.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source main_sim.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+launch_simulation -simset [get_filesets sim_2 ]
+source main_sim.tcl
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source main_sim.tcl
+run all
+run all
+run all
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source main_sim.tcl
+run all
+add_bp {D:/projectsXilinx/LVDS-reading/LVDS-reading.srcs/sources_1/new/main.vhd} 140
+remove_bps -file {D:/projectsXilinx/LVDS-reading/LVDS-reading.srcs/sources_1/new/main.vhd} -line 140
+add_bp {D:/projectsXilinx/LVDS-reading/LVDS-reading.srcs/sources_1/new/main.vhd} 167
+remove_bps -file {D:/projectsXilinx/LVDS-reading/LVDS-reading.srcs/sources_1/new/main.vhd} -line 167
+add_bp {D:/projectsXilinx/LVDS-reading/LVDS-reading.srcs/sources_1/new/main.vhd} 167
+run all
+add_bp {D:/projectsXilinx/LVDS-reading/LVDS-reading.srcs/sources_1/new/main.vhd} 141
+remove_bps -file {D:/projectsXilinx/LVDS-reading/LVDS-reading.srcs/sources_1/new/main.vhd} -line 141
+add_bp {D:/projectsXilinx/LVDS-reading/LVDS-reading.srcs/sources_1/new/main.vhd} 141
+close_sim
+launch_simulation -simset [get_filesets sim_2 ]
+source main_sim.tcl
+run all
+remove_bps -file {D:/projectsXilinx/LVDS-reading/LVDS-reading.srcs/sources_1/new/main.vhd} -line 141
+add_bp {D:/projectsXilinx/LVDS-reading/LVDS-reading.srcs/sources_1/new/main.vhd} 141
+remove_bps -file {D:/projectsXilinx/LVDS-reading/LVDS-reading.srcs/sources_1/new/main.vhd} -line 141
+run all
+run all
+run 52428800 ns
+restart
+run 52428800 ns
+close_sim
+open_project D:/projectsXilinx/testy_xc7/testy_xc7.xpr
+update_compile_order -fileset sources_1
+open_run synth_1 -name synth_1
+close_project
+current_project LVDS-reading
+close_project
